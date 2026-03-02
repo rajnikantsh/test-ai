@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Roboto_Flex } from "next/font/google";
 import "./globals.css";
+
+const roboto = Roboto_Flex({
+  subsets: ["latin"],
+  axes: ["wght"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "App",
@@ -13,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className={`${roboto.className} antialiased`}>{children}</body>
     </html>
   );
 }

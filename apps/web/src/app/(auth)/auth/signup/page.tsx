@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+// TODO: Migrate to AuthShell, shared Input/Button components, and brand color token.
+// Form validation (react-hook-form + Zod) to be wired up alongside backend integration.
 export default function SignupPage() {
   return (
     <div className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200">
